@@ -1,0 +1,99 @@
+
+/* Overall page */
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+  background: #6f7fbe;
+  color: #5a3a5f;
+}
+
+/* Main app */
+.app-container {
+  max-width: 650px;
+  margin: 60px auto;
+  padding: 30px;
+  background: white;
+  border-radius: 18px;
+  box-shadow: 0 8px 25px rgba(0, 0, 0, 0.08);
+}
+
+/* Heading */
+.app-container h1 {
+  text-align: center;
+  color: #5b4bdb;
+  margin-bottom: 10px;
+}
+
+.app-description {
+  text-align: center;
+  color: #777;
+  margin-bottom: 25px;
+}
+
+/* Text area */
+.text-input {
+  width: 100%;
+  min-height: 180px;
+  box-sizing: border-box;
+  padding: 15px;
+  border: 2px solid #dedcf5;
+  border-radius: 12px;
+  font-family: inherit;
+  font-size: 16px;
+  line-height: 1.6;
+  resize: vertical;
+  outline: none;
+  transition: border-color 0.2s;
+}
+
+.text-input:focus {
+  border-color: #4f4788;
+}
+
+/* Statistics layout */
+.stats-container {
+    max-height: 100px;
+    width: 50%;
+    aspect-ratio: 1/1;
+    margin: 0 auto;
+  display: flex;
+  text-align: center;
+
+  gap: 15px;
+  margin-top: 20px;
+}
+
+/* Individual statistic cards */
+.stat-card {
+    flex: 2;
+  
+  text-align: center;
+  padding: 20px 10px;
+  background: #dedcea;
+  border-radius: 12px; 
+}
+
+.stat-card h3 {
+  margin: 0 0 10px;
+  color: #6355c7;
+  font-size: 15px;
+}
+
+.stat-card p {
+  margin: 0;
+  font-size: 30px;
+  font-weight: bold;
+  color: #292447;
+}
+
+/* Smaller screens */
+@media (max-width: 600px) {
+  .app-container {
+    margin: 20px 12px;
+    padding: 20px;
+  }
+
+  .stats-container {
+    gap: 10px;
+  }
+}
